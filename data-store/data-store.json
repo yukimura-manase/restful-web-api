@@ -1,0 +1,20 @@
+[
+  {
+    "user_id": "Pyupyumaru",
+    "password": "pyupyumaruPass",
+    "nickname": "ぴゅぴゅ丸",
+    "comment": "ぴゅぴゅ丸は、可愛い🐱なのだ🌟"
+  },
+  {
+    "user_id": "Robotama",
+    "password": "robotamaPass",
+    "nickname": "ロボたま",
+    "comment": "ロボ玉は、ぷるぷるハムスターなので、ござる🌟"
+  },
+  {
+    "user_id": "Hakutou",
+    "password": "hakutouPass",
+    "nickname": "白桃",
+    "comment": "白桃なのだ！！"
+  }
+]
