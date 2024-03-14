@@ -22,43 +22,33 @@
 
 1. User 情報・取得
 
-   - GET 通信
+   - GET 通信: `/users`
 
-     1. `/users`
+     - User の一覧データを取得する
 
-        - User の一覧データを取得する
+   - GET 通信: `/users/{user_id}`
 
-     2. `/users/{user_id}`
-
-        - 特定(user_id)の User の情報を取得します。
+     - 特定(user_id)の User の情報を取得します。
 
 2. User 新規作成
 
-   - POST 通信
+   - POST 通信: `/users`
 
-   1. `/users`
-
-      - User データを新規作成する
-
-      - User 情報は、リクエストボディに含めます。
+     - User データを新規作成する
+     - User 情報は、リクエストボディに含めます。
 
 3. User 情報・更新
 
-   - PUT 通信
+   - PUT 通信: `/users/{user_id}`
 
-   1. `/users/{user_id}`
-
-      - 特定(user_id)の User の情報を Update します。
-
-      - Update する情報をリクエストボディに含めます。
+     - 特定(user_id)の User の情報を Update します。
+     - Update する情報をリクエストボディに含めます。
 
 4. User 削除
 
-   - DELETE 通信
+   - DELETE 通信: `/users/{user_id}`
 
-   1. `/users/{user_id}`
-
-      - 特定(user_id)の User の情報を削除する
+     - 特定(user_id)の User の情報を削除する
 
 ### 参考・引用
 
