@@ -37,11 +37,11 @@
      - User データを新規作成する
      - User 情報は、リクエストボディに含めます。
 
-3. User 情報・更新
+3. User 情報・更新 (部分 Update)
 
-   - PUT 通信: `/users/{user_id}`
+   - PATCH 通信: `/users/{user_id}`
 
-     - 特定(user_id)の User の情報を Update します。
+     - 特定(user_id)の User の情報を部分的に Update します。
      - Update する情報をリクエストボディに含めます。
 
 4. User 削除

@@ -235,7 +235,7 @@ app.get("/users/:user_id", (req, res) => {
 });
 
 // User データの更新: Update
-app.put("/users/:user_id", (req, res) => {
+app.patch("/users/:user_id", (req, res) => {
   console.log("User Update Request");
 
   // 1. authorization ヘッダーを取得する
@@ -270,16 +270,18 @@ app.put("/users/:user_id", (req, res) => {
 
   /** Update Target User Id */
   const targetUserId = req.params.user_id;
+  const targetPassword = req.body.password;
   const nickname = req.body.nickname;
   const comment = req.body.comment;
   console.log("targetUserId:", targetUserId);
   console.log("nickname:", nickname);
   console.log("comment:", comment);
 
-  // 7. 該当のユーザーが見つかった場合は、nickname と comment を更新する
+  // 7. 該当のユーザーが見つかった場合は、nickname, password, comment を更新する
   dataStore = dataStore.map((user) => {
     if (user.user_id === targetUserId) {
       user.nickname = nickname;
+      user.password = targetPassword;
       user.comment = comment;
     }
     return user;
