@@ -46,11 +46,11 @@
 
 ### User データの更新
 
-- `/users/:user_id` のエンドポイントに対する PUT 通信では User データの更新を受け付ける。
+- `/users/:user_id` のエンドポイントに対する PATCH 通信では User データの一部の更新を受け付ける。
 
 0. 共通の認証処理
 1. `user_id` を Query Parameter として受け取る
-2. 該当 User の nickname と comment を更新する
+2. 該当 User の password, nickname, comment を更新する
 
 ### User データの削除
 
